@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row head">
+            <h1>Todo List</h1>
+        </div>
+        <div class="row">
+            <div class="col sidebar">
+                <div class="sidebar-title">
+                    <span class="icon fontawesome-align-justify"></span>
+                    <span>项目</span>
+                </div>
+                <div id="cat-list" class="cat-list"></div>
+
+                <form id="cat-form" hidden>
+                    <input type="hidden" name="id">
+                    <input type="text" class="block" placeholder="项目名称" name="title" autocomplete="off">
+                    <button type="submit">添加项目</button>
+                    <button type="button" data-action="cancel">取消</button>
+                </form>
+
+                <div id="add-cat" class="add-cat">
+                    <span class="icon fontawesome-edit"></span>
+                    <span class="text">添加项目</span>
+                </div>
+            </div>
+            <div class="col main">
+                <form id="todo-form" class="row">
+                    <input type="hidden" name="id">
+                    <input id="todo-input" type="text" name="title" class="col" placeholder="例如：每天早上喝牛奶" autocomplete="off">
+                    <button class="col">添加</button>
+                    <select id="cat-select" name="cat_id" hidden></select>
+                </form>
+                <div id="todo-list" class="row">
+                    <h2>未完成的任务</h2>
+                    <div class="incomplete">
+                    </div>
+                    <hr>
+                    <h2>已完成的任务</h2>
+                    <div class="completed">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./util/helper.js"></script>
+    <script src="./util/store.js"></script>
+
+    <script src="./api/BaseApi.js"></script>
+    <script src="./api/TaskApi.js"></script>
+    <script src="./api/CatApi.js"></script>
+
+    <script src="./ui/TaskUi.js"></script>
+    <script src="./ui/CatUi.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

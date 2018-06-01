@@ -1,0 +1,290 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background: #fafafa;
+    font-size: 14px;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.row {
+    display: block;
+    font-size: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.icon {
+    font-size: 0.7rem;
+}
+
+.head {
+    padding: 10px 0;
+    ;
+}
+
+.head h1 {
+    margin: 0;
+    text-align: center;
+    color: #db4c3f;
+    font-size: 2.5rem;
+}
+
+.sidebar {
+    display: inline-block;
+    width: 33.33333%;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.main {
+    display: inline-block;
+    width: 66.66666%;
+}
+
+.sidebar-title {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.sidebar-title .icon {
+    font-weight: normal;
+    padding-right: 3px;
+}
+
+.cat-list {
+    padding-right: 30px;
+}
+
+.cat-item {
+    position: relative;
+    padding: 6px 8px;
+    cursor: default;
+}
+
+.cat-item:hover {
+    background: #fff;
+}
+
+.cat-item.active {
+    background: #fff;
+    font-weight: bold;
+}
+
+.cat-item .title {
+    padding: 5px 6px 3px 2px;
+}
+
+.cat-item .title .icon {
+    font-size: 0.5rem;
+    color: rgb(251, 136, 110);
+    padding-right: 8px;
+}
+
+.cat-item .title .text {
+    font-size: 1rem;
+    line-height: 17px;
+}
+
+.cat-item .tool-set {
+    display: none;
+    position: absolute;
+    user-select: none;
+    top: 13px;
+    right: 30px;
+}
+
+.cat-item:hover .tool-set {
+    display: inline-block;
+}
+
+.cat-item .tool-set * {
+    display: inline-block;
+    font-size: 0.6rem;
+    padding: 0 2px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.sidebar .add-cat {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+    color: #dd4b39;
+}
+
+.sidebar .add-cat .icon {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+.sidebar .add-cat .text {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#cat-form input {
+    display: block;
+    width: 70%;
+    padding: 7px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#cat-form button {
+    display: inline-block;
+    border: 0;
+    background: transparent;
+    color: #555;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#cat-form [type=submit],
+#todo-form button {
+    background: #db4c3f;
+    color: #fff;
+    text-shadow: none;
+    padding: 7px 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.main,
+.sidebar {
+    vertical-align: top;
+}
+
+.main {
+    background: #fff;
+    height: 100vh;
+    padding: 25px 30px;
+}
+
+#todo-form {
+    font-size: 0;
+}
+
+#todo-form input,
+#todo-form button {
+    font-size: 14px;
+    height: 40px;
+    line-height: 1.1;
+    vertical-align: top;
+}
+
+#todo-form input {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    padding: 10px;
+}
+
+#todo-form button {
+    width: 20%;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    cursor: pointer;
+}
+
+#todo-form select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+#todo-list .checkbox,
+#todo-list .detail,
+#todo-list .tool-set {
+    display: inline-block;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+
+#todo-list h2 {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+#todo-list .todo-item {
+    margin-bottom: 5px;
+}
+
+#todo-list .checkbox {
+    width: 10%;
+    text-align: center;
+}
+
+#todo-list .checkbox input {
+    zoom: 140%;
+    background: #fff;
+}
+
+#todo-list .detail {
+    width: 60%;
+}
+
+#todo-list .detail .title {
+    font-size: 1.1rem;
+}
+
+#todo-list .tool-set {
+    width: 30%;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+#todo-list .tool-set button {
+    background: #db4c3f;
+    color: #fff;
+    text-shadow: none;
+    padding: 7px 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#todo-list .empty-holder {
+    font-size: .9rem;
+    opacity: .5;
+    text-align: center;
+    padding: 10px;
+}
+
+hr {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border: 0;
+    background: rgba(0, 0, 0, .2);
+    margin: 10px 0;
+}
